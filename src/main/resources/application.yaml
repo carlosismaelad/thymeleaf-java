@@ -1,0 +1,5 @@
+spring:
+  application:
+    name: letswatch
+  mvc:
+    static-path-pattern: "/**"

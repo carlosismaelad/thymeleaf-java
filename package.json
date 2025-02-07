@@ -1,0 +1,15 @@
+{
+  "name": "letswatch",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "css": "npx tailwindcss -i ./src/main/resources/static/input.css -o ./src/main/resources/static/output.css --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "tailwindcss": "3.0"
+  }
+}
