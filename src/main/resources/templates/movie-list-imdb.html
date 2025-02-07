@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Let's Watch!</title>
+    <link rel="stylesheet" href="output.css" />
+    <script th:src="@{/javascript/handleBurgerMenu.js}"></script>
+  </head>
+  <body class="bg-slate-900">
+    <div th:replace="fragments/burgerMenu :: burgerMenu"></div>
+    <section
+      id="imdb-movies"
+      class="flex flex-col justify-center items-center min-h-screen"
+    >
+      <h1 class="text-white text-center text-3xl">Lista de Filmes IMDb</h1>
+    </section>
+  </body>
+</html>

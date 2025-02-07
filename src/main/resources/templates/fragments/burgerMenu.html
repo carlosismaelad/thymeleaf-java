@@ -1,0 +1,92 @@
+<div th:fragment="burgerMenu">
+  <header
+    id="rolagem"
+    class="fixed top-0 left-0 w-full h-18 transition-all z-50"
+  >
+    <!-- Botão de Abrir Menu -->
+    <button
+      id="openMenu"
+      aria-expanded="false"
+      aria-label="Abrir menu"
+      class="fixed top-4 right-4 z-50"
+    >
+      <svg
+        width="40"
+        height="40"
+        viewBox="0 0 40 40"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M10 20H30"
+          stroke="#FBBF24"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+        <path
+          d="M10 12H30"
+          stroke="#FBBF24"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+        <path
+          d="M18 28L30 28"
+          stroke="#FBBF24"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+      </svg>
+    </button>
+
+    <!-- Botão de Fechar Menu -->
+    <button
+      id="closeMenu"
+      aria-expanded="true"
+      aria-label="Fechar menu"
+      class="hidden fixed top-4 right-4 z-50"
+    >
+      <svg
+        width="40"
+        height="40"
+        viewBox="0 0 40 40"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M30 10L10 30M10 10L30 30"
+          stroke="white"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+      </svg>
+    </button>
+
+    <!-- Menu de Navegação -->
+    <div
+      id="menu"
+      class="fixed top-[-100%] left-0 w-full h-screen bg-slate-900 flex flex-col justify-center items-center transition-all duration-700"
+    >
+      <ul class="space-y-12 text-center">
+        <li>
+          <a href="#hero-container" class="text-cyan-400 text-2xl font-bold"
+            >início</a
+          >
+        </li>
+        <li>
+          <a href="#about-me" class="text-cyan-400 text-2xl font-bold"
+            >lista de desejos</a
+          >
+        </li>
+        <li>
+          <a href="#skills" class="text-cyan-400 text-2xl font-bold"
+            >já assistidos</a
+          >
+        </li>
+      </ul>
+    </div>
+  </header>
+</div>
